@@ -38,5 +38,21 @@ VALUES
 ('Rice Bag', 2, 2, 50, 1200),
 ('Sofa Set', 3, 1, 5, 25000);
 
+    select c.category_name,p.product_name,s.supplier_name,p.price,p.stock_quantity
+    from products p
+    join categories c on p.category_id=c.category_id
+    join suppliers s on p.supplier_id=s.supplier_id
+  
+    select c.category_name,p.product_name,s.supplier_name,s.contact_number,p.price,p.stock_quantity
+    from products p
+    join categories c on p.category_id=c.category_id
+    join suppliers s on p.supplier_id=s.supplier_id
+  
+    select c.category_name,p.product_name,s.supplier_name,p.price
+    from products p
+    join categories c on p.category_id=c.category_id
+    join suppliers s on p.supplier_id=s.supplier_id
+  
+
 
 
