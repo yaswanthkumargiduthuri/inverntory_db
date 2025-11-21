@@ -25,4 +25,18 @@ CREATE TABLE products (
 );
 
 
+INSERT INTO categories (category_name) VALUES ('Electronics'), ('Groceries'), ('Furniture');
+
+
+
+INSERT INTO suppliers (supplier_name, contact_number) VALUES ('ABC Traders', '9876543210'), ('Fresh Mart', '9123456789');
+
+
+INSERT INTO products (product_name, category_id, supplier_id, stock_quantity, price)
+VALUES
+('TV', 1, 1, 10, 30000),
+('Rice Bag', 2, 2, 50, 1200),
+('Sofa Set', 3, 1, 5, 25000);
+
+
 
